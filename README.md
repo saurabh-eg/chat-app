@@ -101,4 +101,3 @@ frontend/
 
 ## 👨‍💻 Author
 Saurabh Mishra
-Feel free to reach out for any questions or contributions!
