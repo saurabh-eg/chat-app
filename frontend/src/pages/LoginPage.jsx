@@ -12,7 +12,7 @@ const LoginPage = () => {
       password: '',
     })
   
-    const { login, isLogingIn } = useAuthStore()
+    const { login, isLoggingIn } = useAuthStore()
     
 
     const HandleSubmit = (e) => {
@@ -63,8 +63,8 @@ const LoginPage = () => {
                 </button>
               </div>
             </div>
-            <button type="submit" disabled={isLogingIn} className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${isLogingIn && 'opacity-50 cursor-not-allowed'}`}>
-              {isLogingIn ? (
+            <button type="submit" disabled={isLoggingIn} className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${isLoggingIn && 'opacity-50 cursor-not-allowed'}`}>
+              {isLoggingIn ? (
                 <>
                   <Loader2 className="h-5 w-5 animate-spin" />
                   Loading...
