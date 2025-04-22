@@ -10,5 +10,5 @@
   "keywords": [],
   "author": "Saurabh Mishra",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module"
 }
