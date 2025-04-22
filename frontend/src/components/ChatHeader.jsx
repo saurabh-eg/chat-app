@@ -14,7 +14,7 @@ const ChatHeader = () => {
                     <div className="avatar">
                         <div className="size-10 rounded-full relative">
                             <img src={selectedUser?.profilePic && selectedUser.profilePic[0]?.url ||
-                                "/avatar.png"} alt={selectedUser.fullname} />
+                                (import.meta.env.MODE === 'development' ? '/avatar.png' : '/dist/avatar.png')} alt={selectedUser.fullname} />
                         </div>
                     </div>
 
